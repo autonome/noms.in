@@ -1,0 +1,313 @@
+/* YUI RESET 3.2.0 */ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+/* YUI BASE  3.2.0 */ h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;}em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
+/* YUI FONTS 3.2.0 */ .yui3-cssfonts body,.yui3-cssfonts{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}.yui3-cssfonts select,.yui3-cssfonts input,.yui3-cssfonts button,.yui3-cssfonts textarea{font:99% arial,helvetica,clean,sans-serif;}.yui3-cssfonts table{font-size:inherit;font:100%;}.yui3-cssfonts pre,.yui3-cssfonts code,.yui3-cssfonts kbd,.yui3-cssfonts samp,.yui3-cssfonts tt{font-family:monospace;*font-size:108%;line-height:100%;}
+/* YUI GRIDS 3.2.0 */ .yui3-g{letter-spacing:-0.31em;*letter-spacing:normal;word-spacing:-0.43em;}.yui3-u,.yui3-u-1,.yui3-u-1-2,.yui3-u-1-3,.yui3-u-2-3,.yui3-u-1-4,.yui3-u-3-4,.yui3-u-1-5,.yui3-u-2-5,.yui3-u-3-5,.yui3-u-4-5,.yui3-u-1-6,.yui3-u-5-6,.yui3-u-1-8,.yui3-u-3-8,.yui3-u-5-8,.yui3-u-7-8,.yui3-u-1-12,.yui3-u-5-12,.yui3-u-7-12,.yui3-u-11-12,.yui3-u-1-24,.yui3-u-5-24,.yui3-u-7-24,.yui3-u-11-24,.yui3-u-13-24,.yui3-u-17-24,.yui3-u-19-24,.yui3-u-23-24{display:inline-block;zoom:1;*display:inline;letter-spacing:normal;word-spacing:normal;vertical-align:top;}.yui3-u-1{display:block;}.yui3-u-1-2{width:50%;}.yui3-u-1-3{width:33.33333%;}.yui3-u-2-3{width:66.66666%;}.yui3-u-1-4{width:25%;}.yui3-u-3-4{width:75%;}.yui3-u-1-5{width:20%;}.yui3-u-2-5{width:40%;}.yui3-u-3-5{width:60%;}.yui3-u-4-5{width:80%;}.yui3-u-1-6{width:16.656%;}.yui3-u-5-6{width:83.33%;}.yui3-u-1-8{width:12.5%;}.yui3-u-3-8{width:37.5%;}.yui3-u-5-8{width:62.5%;}.yui3-u-7-8{width:87.5%;}.yui3-u-1-12{width:8.3333%;}.yui3-u-5-12{width:41.6666%;}.yui3-u-7-12{width:58.3333%;}.yui3-u-11-12{width:91.6666%;}.yui3-u-1-24{width:4.1666%;}.yui3-u-5-24{width:20.8333%;}.yui3-u-7-24{width:29.1666%;}.yui3-u-11-24{width:45.8333%;}.yui3-u-13-24{width:54.1666%;}.yui3-u-17-24{width:70.8333%;}.yui3-u-19-24{width:79.1666%;}.yui3-u-23-24{width:95.8333%;}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #444;
+  color: #333;
+  font-family: 'helvetica neue', helvetica, verdana, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 1000px;
+  width: 100%;
+  line-height: 120%;
+}
+p {
+	margin-bottom: 0;
+}
+p + p {
+	margin-top: .5em;
+}
+
+p + h2 {
+	margin-top: 1em;
+}
+
+
+div#header,
+div#content,
+div#footer {
+  background-color: #fff;
+  margin: 0 auto 20px;
+  padding: 40px;
+  max-width: 670px;
+  position: relative;
+}
+div#header {
+padding: 70px 40px 20px;
+}
+div#footer {
+  margin-bottom: 0px;
+  padding: 20px 40px;
+  font-size: 70%;
+}
+
+div#header h1, 
+div#content h1 {
+  margin-top: 0;
+}
+div#header h1 {
+  margin-bottom: 0;
+}
+div#header {
+  font-size: 135%;
+  font-style: bold;
+}
+div#header a {
+  text-decoration: none;
+}
+div#header a:hover {
+  border-bottom: 1px dotted #D54746;
+}
+div#header a.city, div#header a:visited.city {
+  color: #333;
+}
+div#header a:visited {
+	color: #d54746;
+}
+div#header a:hover.city {
+  border-bottom: 1px dotted #333;
+}
+
+span#tagline {
+  font-size: 0.46em;
+  float: right;
+  font-weight: normal;
+  padding: 4px 0 5px;
+}
+span#tagline a.more {
+	display: inline-block;
+    font-size: 0.8em;
+    min-width: 32px;
+    text-transform: uppercase;
+}
+.more_cities {
+	font-size: 0.46em; 
+	font-weight: normal; 
+	float: right;
+	display: block;
+}
+#more_cities {
+	clear:both;
+}
+h1.more_cities_h1 {
+	overflow: hidden; 
+	clear: both; 
+	padding-top: 8px; 
+	display: block; 
+	margin-top: 11px; 
+	border-top: 1px dotted #ddd;
+}
+span.red {
+  color: #d54746;
+}
+img.bground_full {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#bground-dot {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: url("../images/bground-dot.png") repeat scroll 0 0 transparent;
+}
+#photo_attribution {
+	float: right;
+}
+
+/* FONT STYLES */
+a {
+  text-decoration: none;	
+  color: #d54746;
+}
+a:visited {
+	color: #a40133;
+}
+h1, h2, h3 {
+	margin: 0.3em 0 .5em;
+}
+.more_info {
+	font-size: 90%;
+	white-space: nowrap;
+}
+
+/* MISC HELPERS */
+
+img.left {
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+/* HOME */
+
+h3.tag {
+  display: block;
+  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#feature a#main_pic  {
+	float: left;
+	display: block;
+	margin-right: 2px;
+	margin-bottom: 30px;
+	height: 436px;
+	width: 465px;
+	overflow:hidden;
+}
+#main_pic img {
+	left: -95px;
+    position: relative;
+    height: 100%
+}
+#three_pic img {
+	width: 200px;
+	margin-bottom: 2px;
+	display: block;
+	height: 144px;
+}
+#three_pic {
+	float: left;
+	width: 200px;
+}
+#feature {
+	overflow: hidden;
+}
+.feature_title {
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: lighter;
+    padding: 16px;
+    position: absolute;
+    width: 433px;
+    display: block;
+}
+a.feature_title {
+	color: white;
+	font-size: 12px;
+}
+.feature_title img {
+border: 1px solid #999999;
+float: left;
+height: 55px;
+margin-right: 14px;
+width: 55px;
+}
+.feature_city {
+	display: block;
+    font-size: 34px;
+    margin: 10px 0 4px;
+}
+#
+/* PLACES */
+div#place_wrapper {
+  overflow: auto;	
+}
+img.main_place_img {
+  margin: 0 0 30px 0;
+  width: 670px;
+  display: block;
+}
+#place_desc {
+	font-family: Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif;
+	font-size: 105%;
+	line-height: 130%;
+}
+.next_destination {
+	font-size: 90%;
+	margin-top: 30px;
+}
+.next_destination span {
+	font-size: 80%;
+    text-transform: uppercase;
+}
+.next_destination p {
+	margin-bottom: .5em;
+}
+#map_canvas {
+  height: 225px; 
+  width: 225px; 
+  margin-bottom: 20px;
+}
+.place_left {
+	float: left;
+	margin-right: 30px;
+}
+#map {
+	float: right;
+	font-size: 90%;
+	line-height: 120%;
+	margin-left: 30px;
+	width: 225px;
+	margin-bottom: 20px;
+    }
+.city_place {
+	overflow: hidden;
+	border-bottom: 1px dotted #AAAAAA;
+    margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+.city_place_pic {
+	float: left;
+	width: 240px;
+	margin-right: 30px;
+}
+.city_place_title {
+	float: left;
+	width: 400px;
+}
+.city_place_title h3 {
+	margin-top: 0;
+}
+
+.city_address {
+	font-size: 90%;
+}
+.curator_bio {
+	border-bottom: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    clear: both;
+    font-size: 90%;
+    margin: 15px 0 20px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+.curator_bio img {
+	float: left;
+	height: 100px;
+	margin-right: 15px;
+	width: 100px;
+	margin-left: -120px;
+}
+.city_overview {
+	border-bottom: 1px dotted #CCCCCC;
+	font-family: Georgia,Palatino,” Palatino Linotype”,Times,“Times New Roman”,serif;
+	font-size: 105%;
+	line-height: 130%;
+	margin: 15px 0 20px;
+	padding: 0 0 15px;
+}
+/* PLACES */
+
+/* CITIES */
+
+.curator {
+	font-size: 80%;
+    text-transform: uppercase;
+}
+/* CITIES */
